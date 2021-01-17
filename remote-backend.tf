@@ -1,6 +1,8 @@
 terraform {
   backend "local" {
      path = "/var/tmp/terraform-local-backend/terraform.tfstate"
+    # this file need to be created prior
+    # sudo chmod -R 777 /var/tmp/terraform-local-backend/
   }
 }
 
